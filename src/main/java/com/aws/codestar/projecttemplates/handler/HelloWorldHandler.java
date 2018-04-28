@@ -6,6 +6,8 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.aws.codestar.projecttemplates.GatewayResponse;
 import org.json.JSONObject;
 
+import java.util.Arrays;
+
 import java.util.HashMap;
 import java.util.Map;
 
