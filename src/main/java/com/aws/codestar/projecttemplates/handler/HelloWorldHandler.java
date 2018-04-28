@@ -19,6 +19,6 @@ public class HelloWorldHandler implements RequestHandler<Object, Object> {
     public Object handleRequest(final Object input, final Context context) {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
-        return new GatewayResponse(new JSONObject().put("List of items to take care", Arrays.asList("Shopping","Movies","Dinner")).toString(), headers, 200);
+        return new GatewayResponse(new JSONObject().put("ToDoList", Arrays.asList("Shopping","Movies","Dinner")).toString(), headers, 200);
     }
 }
